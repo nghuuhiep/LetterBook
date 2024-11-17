@@ -17,7 +17,6 @@ function loadShow() {
     items[active].style.transform = mobile ? "scale(1.3)" : "scale(1.1)";
     items[active].style.fontSize = mobile ? "large" : "";
     items[active].style.padding = mobile ? "15px" : "50px"
-    items[active].style.height = mobile ? "390px" : "320px"
     for (var i = active + 1; i < items.length; i++) {
         stt++;
         items[i].style.transform = `translateX(${100 + (80 * stt)}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(${-0.55*stt}deg)`;
