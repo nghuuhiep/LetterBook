@@ -15,7 +15,7 @@ function loadShow() {
     let mobile = window.isDevice;
     let show = mobile ? 2 : 4;
     items[active].style.transform = mobile ? "scale(1.3)" : "scale(1.1)";
-    items[active].style.fontSize = mobile ? "large" : "";
+    items[active].style.fontSize = mobile ? "medium" : "medium";
     items[active].style.padding = mobile ? "15px" : "50px"
     for (var i = active + 1; i < items.length; i++) {
         stt++;
