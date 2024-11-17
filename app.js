@@ -22,7 +22,7 @@ function loadShow() {
     let show = mobile ? 2 : 4;
     let distance = mobile ? 50 : 100
     items[active].style.transform = mobile ? "scale(1.3)" : "scale(1.1)";
-    items[active].style.fontSize = mobile ? "small" : "medium";
+    items[active].style.fontSize = mobile ? "0.9vh" : "2vh";
     items[active].style.padding = mobile ? "20px" : "50px"
     for (var i = active + 1; i < items.length; i++) {
         stt++;
