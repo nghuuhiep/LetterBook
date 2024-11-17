@@ -15,14 +15,14 @@ function loadShow() {
     let mobile = window.isDevice;
     for (let i = 0; i < items.length; i++){
         let main = items[i].style;
-        main.height = mobile ? "20vh" : "320px"
-        main.width = mobile ? "22.5vw" : "200px"
+        main.height = mobile ? "30vh" : "320px"
+        main.width = mobile ? "33.5vw" : "200px"
         main.transform = "none"
     }
     let show = mobile ? 2 : 4;
     let distance = mobile ? 50 : 100
     items[active].style.transform = mobile ? "scale(1.3)" : "scale(1.1)";
-    items[active].style.fontSize = mobile ? "medium" : "medium";
+    items[active].style.fontSize = mobile ? "small" : "medium";
     items[active].style.padding = mobile ? "20px" : "50px"
     for (var i = active + 1; i < items.length; i++) {
         stt++;
