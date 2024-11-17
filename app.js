@@ -20,7 +20,7 @@ function loadShow() {
     items[active].style.height = mobile ? "350px" : "320px"
     for (var i = active + 1; i < items.length; i++) {
         stt++;
-        items[i].style.transform = `translateX(${100 + (100 * stt)}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(${-0.45*stt}deg)`;
+        items[i].style.transform = `translateX(${100 + (100 * stt)}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(${-0.55*stt}deg)`;
         items[i].style.zIndex = -stt;
         items[i].style.filter = `blur(${5 * stt}px)`;
         items[i].style.opacity = stt > show ? 0 : 0.6;
@@ -28,7 +28,7 @@ function loadShow() {
     stt = 0;
     for (var i = active - 1; i >= 0; i--) {
         stt++;
-        items[i].style.transform = `translateX(${-100 + (-100 * stt)}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(${0.45*stt}deg)`;
+        items[i].style.transform = `translateX(${-100 + (-100 * stt)}px) scale(${1 - 0.2 * stt}) perspective(16px) rotateY(${0.55*stt}deg)`;
         items[i].style.zIndex = -stt;
         items[i].style.filter = `blur(${5 * stt}px)`;
         items[i].style.opacity = stt > show ? 0 : 0.6;
