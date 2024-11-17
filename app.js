@@ -14,7 +14,7 @@ function loadShow() {
     window.isDevice = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(((navigator.userAgent || navigator.vendor || window.opera)).toLowerCase()));
     let mobile = window.isDevice;
     let show = mobile ? 2 : 4;
-    items[active].style.transform = mobile ? "scale(1.9)" : "scale(1.1)";
+    items[active].style.transform = mobile ? "scale(1.3)" : "scale(1.1)";
     items[active].style.fontSize = mobile ? "large" : "";
     items[active].style.padding = mobile ? "15px" : "50px"
     items[active].style.height = mobile ? "390px" : "320px"
