@@ -35,7 +35,7 @@ function loadShow() {
     }
 }
 next.onclick = function () {
-    if (active == 10) return
+    if (active == items.length - 1) return
     active = active + 1 < items.length ? active + 1 : active;
     audio.play();
     setTimeout(() => {
@@ -63,7 +63,7 @@ document.addEventListener("keyup",(e)=>{
             break;
         case 'ArrowRight':
         case "d":
-            if (active == 10) return
+            if (active == items.length - 1) return
             active = active + 1 >= 0 ? active + 1 : active;
             audio.play()
             setTimeout(() => {
