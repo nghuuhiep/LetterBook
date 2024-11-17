@@ -1,6 +1,6 @@
 document.getElementById("MB").textContent = MB;
 document.getElementById("KB").textContent = KB;
-let audio = new Audio(".resources/pageFlip.mp3")
+let audio = new Audio("resources/pageFlip.mp3")
 let items = document.querySelectorAll('.slider .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
