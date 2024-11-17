@@ -15,8 +15,8 @@ function loadShow() {
     let mobile = window.isDevice;
     for (let i = 0; i < items.length; i++){
         let main = items[i].style;
-        main.height = "20vh"
-        main.width = "22.5vw"
+        main.height = mobile ? "20vh" : "320px"
+        main.width = mobile ? "22.5vw" : "200px"
         main.transform = "none"
     }
     let show = mobile ? 2 : 4;
